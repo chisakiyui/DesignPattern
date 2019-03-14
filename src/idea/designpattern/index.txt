@@ -1,0 +1,14 @@
+
+factory-工厂模式
+
+simplefactory-简单工厂模式
+
+staticproxy-静态代理模式
+
+jdkdynamicproxy-jdk动态代理
+
+cglibproxy-cglib动态代理
+
+strategy-策略模式
+
+prototype-原型模型
