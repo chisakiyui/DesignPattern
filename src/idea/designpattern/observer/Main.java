@@ -20,8 +20,10 @@ package idea.designpattern.observer;
 public class Main {
     public static void main(String[] args) {
         Company alibaba = new Alibaba();
+        Company tencent = new Tecent();
         Rate rate = new RMBRate();
         rate.add(alibaba);
+        rate.add(tencent);
 
         rate.change(10);
     }

@@ -4,6 +4,8 @@ package idea.designpattern.observer;
  * RMBRate
  * 具体被观察者：人民币汇率
  *
+ * 一个被观察者对应多个观察者
+ * 多个观察者:Alibaba,Tecent 都依赖 RMBRate
  * @Author:20644
  * @Date:2019/03/15
  */
