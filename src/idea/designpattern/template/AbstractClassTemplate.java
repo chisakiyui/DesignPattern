@@ -14,7 +14,7 @@ public abstract class AbstractClassTemplate {
 
     public void template() {
         concreteMethod();
-        if(isFlag()){
+        if(doGetFlag()){
             abstractMethod1();
         }
         abstractMethod2();
@@ -39,9 +39,10 @@ public abstract class AbstractClassTemplate {
 
     /**
      * 钩子方法
+     * 一般do开头，如doGet() doPost()
      * @return
      */
-    protected boolean isFlag() {
+    protected boolean doGetFlag() {
         return true;
     }
 

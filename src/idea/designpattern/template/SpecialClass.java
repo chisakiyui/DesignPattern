@@ -19,7 +19,7 @@ public class SpecialClass extends AbstractClassTemplate{
     }
 
     @Override
-    public boolean isFlag(){
+    public boolean doGetFlag(){
         //do something
         return true;
     }

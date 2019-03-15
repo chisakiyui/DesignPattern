@@ -25,7 +25,7 @@ public class ConcreteClass extends AbstractClassTemplate {
      * @return
      */
     @Override
-    public boolean isFlag(){
+    public boolean doGetFlag(){
         //do something
         return false;
     }
