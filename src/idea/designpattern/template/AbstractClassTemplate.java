@@ -11,17 +11,19 @@ package idea.designpattern.template;
  */
 public abstract class AbstractClassTemplate {
 
-    private boolean flag = false;
 
     public void template() {
         concreteMethod();
-        if(flag){
+        if(isFlag()){
             abstractMethod1();
         }
         abstractMethod2();
     }
 
-    public void concreteMethod() {
+    /**
+     * 基本方法一般用final修饰，防止子类修改，这个方法是所有继承这个模板的类共有的
+     */
+    public final void concreteMethod() {
         System.out.println("具体方法");
     }
 

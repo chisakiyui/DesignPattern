@@ -9,7 +9,10 @@ package idea.designpattern.template;
  */
 public class Main {
     public static void main(String[] args) {
-        AbstractClassTemplate abstractClassTemplate = new ConcreteClass();
-        abstractClassTemplate.template();
+        AbstractClassTemplate concreteClass = new ConcreteClass();
+        concreteClass.template();
+
+        AbstractClassTemplate specialClass = new SpecialClass();
+        specialClass.template();
     }
 }
