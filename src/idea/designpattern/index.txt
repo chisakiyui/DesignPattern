@@ -11,6 +11,8 @@ cglibproxy-cglib动态代理
 
 strategy-策略模式
 
-prototype-原型模型
+prototype-原型模式
 
-template-模板模型
+template-模板模式
+
+decorator-装饰器模式
