@@ -7,15 +7,15 @@ package idea.designpattern.simplefactory;
  */
 public class ShapeFactory {
 
-    public Shape getShape(String shapeType) {
+    public static Shape getShape(String shapeType) {
         if (shapeType == null) {
             return null;
         }
-        if (shapeType.equalsIgnoreCase("Circle")) {
+        if ("Circle".equals(shapeType)) {
             return new Circle();
-        } else if (shapeType.equalsIgnoreCase("Rectangle")) {
+        } else if ("Rectangle".equals(shapeType)) {
             return new Rectangle();
-        } else if (shapeType.equalsIgnoreCase("Square")) {
+        } else if ("Square".equals(shapeType)) {
             return new Square();
         }
         return null;

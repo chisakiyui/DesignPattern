@@ -1,7 +1,7 @@
 package idea.designpattern.factory;
 
 /**
- * 抽象工厂模式
+ * 工厂方法模式
  * 符合开闭原则
  * 如果想新增一种Shape,只需要新增具体实现类以及该生产类的工厂（新增具体产品和对应的具体工厂）
  * 不需要修改任何其他代码
@@ -13,8 +13,11 @@ package idea.designpattern.factory;
  */
 public class Main {
     public static void main(String[] args) {
-        Provider provider = new CircleFactory();
-        Shape circle = provider.produce();
+        Provider circleProvider = new CircleFactory();
+        Shape circle = circleProvider.produce();
         circle.draw();
+        Provider squareProvider = new SquareFactory();
+        Shape square = squareProvider.produce();
+        square.draw();
     }
 }
