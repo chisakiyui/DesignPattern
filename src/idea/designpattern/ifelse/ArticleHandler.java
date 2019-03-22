@@ -20,7 +20,10 @@ public class ArticleHandler {
         this.handler = new Handler();
     }
 
-    class Handler {
+    /**
+     * 使用内部类进行隐藏，不然外面直接访问到这些方法，这能通过反射来访问
+     */
+    private class Handler {
         public void comment(String str, Boolean value) {
             article.setComment(value);
             System.out.println(str);
