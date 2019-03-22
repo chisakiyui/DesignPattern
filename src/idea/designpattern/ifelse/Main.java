@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException;
 public class Main {
 
     public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
-        String input = "top1";
+        String input = "top";
         Boolean value = Boolean.valueOf(true);
         Article article = new Article();
 
@@ -33,5 +33,6 @@ public class Main {
          */
         ArticleHandler articleHandler = new ArticleHandler(article);
         articleHandler.setType(input,value);
+
     }
 }
