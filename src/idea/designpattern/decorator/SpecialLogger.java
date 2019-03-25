@@ -14,4 +14,9 @@ public class SpecialLogger implements Logger {
     public void log() {
         System.out.println("SpecialLogger");
     }
+
+    @Override
+    public void logTest() {
+        System.out.println("Special logTest");
+    }
 }

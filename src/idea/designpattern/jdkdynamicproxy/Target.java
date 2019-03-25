@@ -9,8 +9,14 @@ package idea.designpattern.jdkdynamicproxy;
 public class Target implements ITarget {
 
     @Override
-    public void business() {
-        System.out.println("target business");
+    public void business(String str) {
+        System.out.println("target "+str);
+    }
+
+    @Override
+    public void method(String str, int i) {
+        System.out.println("str = "+str);
+        System.out.println("i = "+i);
     }
 
 }

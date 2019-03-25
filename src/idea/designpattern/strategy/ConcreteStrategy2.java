@@ -13,9 +13,4 @@ public class ConcreteStrategy2 implements Strategy {
         System.out.println("strategy2");
     }
 
-    @Override
-    public void test() {
-        System.out.println("test2");
-    }
-
 }

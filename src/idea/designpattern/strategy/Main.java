@@ -20,6 +20,5 @@ public class Main {
         Strategy strategy = new ConcreteStrategy1();
         Context context = new Context(strategy);
         context.method();
-        context.test();
     }
 }

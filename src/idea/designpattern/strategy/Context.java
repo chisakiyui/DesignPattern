@@ -27,10 +27,4 @@ public class Context {
         this.strategy.method();
     }
 
-    /**
-     * 策略方法
-     */
-    public void test() {
-        this.strategy.test();
-    }
 }

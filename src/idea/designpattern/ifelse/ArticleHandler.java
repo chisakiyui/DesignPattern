@@ -21,7 +21,7 @@ public class ArticleHandler {
     }
 
     /**
-     * 使用内部类进行隐藏，不然外面直接访问到这些方法，这能通过反射来访问
+     * 使用内部类进行隐藏，不让外部直接访问到这些方法，只能通过反射来访问
      */
     private class Handler {
         public void comment(String str, Boolean value) {

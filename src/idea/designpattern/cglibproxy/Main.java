@@ -30,12 +30,14 @@ public class Main {
         Target proxyObj = (Target) interceptor.createProxy();
 
         proxyObj.business();
+        System.out.println("***********************");
         proxyObj.test();
 
         /**
          * FinalMethodTarget 的方法使用final修饰
          * FinalMethodTarget的方法能够执行，但是不会执行代理的方法，功能得不到扩展
          */
+        System.out.println("***********************");
         FinalMethodTarget finalMethodTarget = new FinalMethodTarget();
         Interceptor finalMethodInterceptor = new Interceptor(finalMethodTarget);
         FinalMethodTarget finalMethodTargetProxy = (FinalMethodTarget) finalMethodInterceptor.createProxy();

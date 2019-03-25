@@ -23,4 +23,11 @@ public class Decorator implements Logger {
             logger.log();
         }
     }
+
+    @Override
+    public void logTest() {
+        if (logger != null) {
+            logger.logTest();
+        }
+    }
 }

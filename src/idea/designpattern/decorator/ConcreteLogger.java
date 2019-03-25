@@ -14,4 +14,9 @@ public class ConcreteLogger implements Logger {
     public void log() {
         System.out.println("ConcreteLogger");
     }
+
+    @Override
+    public void logTest() {
+        System.out.println("logger test!");
+    }
 }

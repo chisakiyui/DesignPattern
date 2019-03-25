@@ -8,11 +8,11 @@ package idea.designpattern.cglibproxy;
  */
 public class Target {
 
-    public void business(){
+    public void business() {
         System.out.println("target business!");
     }
 
-    public void test(){
+    public void test() {
         System.out.println("target test!");
     }
 

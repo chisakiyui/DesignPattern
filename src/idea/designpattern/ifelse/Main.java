@@ -33,6 +33,5 @@ public class Main {
          */
         ArticleHandler articleHandler = new ArticleHandler(article);
         articleHandler.setType(input,value);
-
     }
 }
